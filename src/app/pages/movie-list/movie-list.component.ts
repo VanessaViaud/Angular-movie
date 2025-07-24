@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {NgStyle} from '@angular/common';
 import {StarRatingComponent} from '../star-rating/star-rating.component';
 
@@ -13,12 +13,19 @@ import {StarRatingComponent} from '../star-rating/star-rating.component';
 })
 export class MovieListComponent {
 
-//   apiURI : String = "http://localhost:3000/articles";
-//
-//   fetch(apiURI:String).then(response => {
-//     const data = response.json();
-//     return data;
-// });
+  function
+
+  getMovies() {
+
+    const apiURI : String = "http://localhost:3000/articles";
+
+    fetch(apiURI: String).then(response => {
+      const
+        data = response.json();
+      return
+      data;
+    };
+  }
 
 
   movies = [
