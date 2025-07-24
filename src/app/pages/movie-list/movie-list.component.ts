@@ -1,15 +1,25 @@
 import { Component } from '@angular/core';
 import {NgStyle} from '@angular/common';
+import {StarRatingComponent} from '../star-rating/star-rating.component';
 
 @Component({
   selector: 'app-movie-list',
   imports: [
-    NgStyle
+    NgStyle,
+    StarRatingComponent
   ],
   templateUrl: './movie-list.component.html',
   styleUrl: './movie-list.component.scss'
 })
 export class MovieListComponent {
+
+//   apiURI : String = "http://localhost:3000/articles";
+//
+//   fetch(apiURI:String).then(response => {
+//     const data = response.json();
+//     return data;
+// });
+
 
   movies = [
     {
