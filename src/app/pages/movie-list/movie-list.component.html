@@ -1,0 +1,61 @@
+<br />
+<h1>Films</h1>
+<br />
+
+@for (movie of movies; track movie) {
+<div class="uk-card uk-card-default uk-card-body">
+  <div
+    class="uk-card uk-card-secondary uk-card-hover uk-card-body eni-movie-card"
+    [ngStyle]="{
+      'background-image':
+        'radial-gradient(circle, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.7) 100%), url(' +
+        movie.cover +
+        ')'
+    }"
+  >
+    <div class="eni-movie-radial-gradient">
+      <h2 class="uk-card-title">{{ movie.title }}</h2>
+      <h3>{{ movie.year }}, {{ movie.author }}</h3>
+      <p>{{ movie.duration }} min</p>
+      
+      @if(movie.rating === 1) {
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      }
+      @if(movie.rating === 2) {
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      }
+      @if(movie.rating === 3) {
+        <i class="fa fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      }
+      @if(movie.rating === 4) {
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      }
+      @if(movie.rating === 5) {
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      }
+      <p>{{ movie.genre }}</p>
+      <p>{{ movie.synopsis }}</p>
+    </div>
+  </div>
+</div>
+}

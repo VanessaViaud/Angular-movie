@@ -1,0 +1,21 @@
+.eni-movie-card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  color: white;
+  overflow: hidden;
+  min-height: 400px;
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+
+  .eni-movie-radial-gradient {
+    position: relative;
+    z-index: 1;
+  }
+}
+.fa-star {
+  color:orange;
+}
