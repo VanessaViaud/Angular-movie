@@ -1,3 +1,14 @@
-.fa-star {
-  color:#FFD240;
+.eni-movie-rating {
+  display: flex;
+  gap: 4px;
+  font-size: 1rem;
+  color: #FFBD59;
+
+  i {
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
